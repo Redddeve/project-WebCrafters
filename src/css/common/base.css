@@ -1,5 +1,5 @@
 :root {
-  --font-family: DM sans, sans-serif;
+  --font-family: 'DM sans', sans-serif;
 
   --color-dark-blue: #11131f;
   --color-light-green: #93abae;
@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: DM Sans, sans-serif;
+  font-family: 'DM Sans', sans-serif;
   color: var(--color-white);
   background-color: var(--color-dark-blue);
 }
