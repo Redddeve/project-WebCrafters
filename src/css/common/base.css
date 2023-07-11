@@ -1,4 +1,10 @@
 :root {
+  --color-dark-blue: #11131f;
+  --color-light-green: #93abae;
+  --color-linear-green: linear-gradient(to bottom, #bec7c2 0%, #a1b5ba 100%);
+  --color-white: #f6f5ef;
+  --color-blue-2: #1f212d;
+
   font-family: sample;
   /* font-size: 16px;
   line-height: 24px;
