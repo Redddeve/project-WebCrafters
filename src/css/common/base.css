@@ -1,11 +1,11 @@
 :root {
+  --font-family: 'DM sans', sans-serif;
+
   --color-dark-blue: #11131f;
   --color-light-green: #93abae;
   --color-linear-green: linear-gradient(to bottom, #bec7c2 0%, #a1b5ba 100%);
   --color-white: #f6f5ef;
   --color-blue-2: #1f212d;
-
-  font-family: sample;
 }
 
 .visually-hidden {
@@ -21,8 +21,8 @@
   margin: -1px;
 }
 
-.body {
-  font-family: DM Sans, sans-serif;
+body {
+  font-family: 'DM Sans', sans-serif;
   color: var(--color-white);
   background-color: var(--color-dark-blue);
 }

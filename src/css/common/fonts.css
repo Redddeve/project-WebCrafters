@@ -1,4 +1,28 @@
 @font-face {
-  font-family: 'sample_font';
-  src: url(../sample);
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/DMSans-Bold.ttf);
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/DMSans-Medium.ttf);
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/DMSans-MediumItalic.ttf);
 }
