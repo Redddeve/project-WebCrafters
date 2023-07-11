@@ -73,7 +73,13 @@
   border-radius: 6px;
 }
 .footer-social-icon {
+  fill: var(--color-white, #f6f5ef);
 }
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+  /* linear-gradient */
+}
+
 /* FOOTER COPYRIGHT */
 .footer-copyright {
   display: flex;
