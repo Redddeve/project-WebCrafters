@@ -1,6 +1,6 @@
 .services-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -27,12 +27,62 @@
   border-radius: 60px;
   background-color: var(--color-white);
   position: absolute;
-  top: 268px;
-  right: 216px;
+  bottom: 24px;
+  left: 24px;
 
   color: var(--color-dark-blue);
   font-size: 14px;
   font-weight: 700;
   line-height: 110%;
   letter-spacing: -0.63px;
+}
+
+@media only screen and (min-width: 768px) {
+  .services-list {
+    gap: 32px;
+  }
+
+  .service-name {
+    bottom: 32px;
+    left: 32px;
+  }
+
+  .service-card:nth-child(1) {
+    width: 704px;
+    height: 632px;
+  }
+
+  .service-card:nth-child(2) {
+    width: 400px;
+    height: 389px;
+    margin-left: auto;
+  }
+
+  .service-card:nth-child(3) {
+    width: 380px;
+    height: 352px;
+    margin-left: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .services-list {
+    gap: 64px;
+  }
+
+  .service-card:nth-child(1) {
+    width: 712px;
+  }
+
+  .service-card:nth-child(2) {
+    width: 440px;
+    height: 428px;
+    margin-top: auto;
+    margin-left: auto;
+  }
+
+  .service-card:nth-child(3) {
+    width: 436px;
+    margin-left: 340px;
+  }
 }
