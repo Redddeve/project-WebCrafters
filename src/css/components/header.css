@@ -1,23 +1,79 @@
-/* previous styles
-
- .header {
-  padding: 20px 0;
+.header-container {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(246, 245, 239, 0.2);
 }
-
+@media only screen and (min-width: 768px) {
+  .header-container {
+    height: 80px;
+  }
+}
+.header-logo {
+  line-height: 1.14;
+}
+@media only screen and (min-width: 768px) {
+  .header-logo {
+    font-size: 18px;
+    line-height: 1.18;
+  }
+}
+.page-nav {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .page-nav {
+    display: flex;
+  }
+}
 .nav-list {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 40px;
+  gap: 24px;
 }
-
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+/** ========================= Mobile Menu ========================= */
+.menu-toggle,
+.menu-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
+@media only screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle-icon {
+  fill: var(--color-white);
+}
+.menu-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-dark-blue);
+  z-index: 999;
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-} */
+  transform: translateX(100%);
+  transition: transform var(--anim-fast);
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.mob-nav {
+  margin-top: 140px;
+}
+.mob-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
