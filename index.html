@@ -10,17 +10,21 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/project-WebCrafters/assets/index-3d07f250.js"></script>
-    <link rel="stylesheet" href="/project-WebCrafters/assets/index-62f8de80.css">
+    <script type="module" crossorigin src="/project-WebCrafters/assets/index-f27c44c5.js"></script>
+    <link rel="stylesheet" href="/project-WebCrafters/assets/index-e66cefa8.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
-    <div class="header-container">
+    <div class="header-container" id="header">
       <a href="index.html" class="header-logo link">
-        <svg class="header-logo-icon" width="25" height="25">
-          <use href="/project-WebCrafters/assets/icons-03889596.svg#yacht"></use>
-        </svg>
+        <img
+          class="logo-image"
+          src="../img/logo/logo.png"
+          alt="Logo"
+          width="16"
+          height="18"
+        />
         yaht Adventures</a
       >
       <nav class="page-nav">
@@ -32,7 +36,7 @@
       </nav>
       <button class="menu-toggle js-open-menu">
         <svg class="menu-toggle-icon" width="24" height="24">
-          <use href="/project-WebCrafters/assets/icons-03889596.svg#menu"></use>
+          <use href="/project-WebCrafters/assets/icons-03889596.svg#burger-menu"></use>
         </svg>
       </button>
     </div>
@@ -125,7 +129,8 @@
   </div>
 </section>
 
-      
+      <section class="section" id="yahts"></section>
+
       <section class="services-section">
   <div class="services-container container">
     <ul class="services-list list">
@@ -192,7 +197,7 @@
   </div>
 </div>
 
-      <section class="reviews section">
+      <section class="reviews section" id="reviews">
   <div class="container">
     <div class="reviews-box">
       <h2 class="reviews-title secondary-title-italic">
@@ -348,6 +353,13 @@
         </svg>
       </li>
     </ul>
+    <div class="bth-box">
+      <a class="back-to-home" href="#">
+        <svg class="bth-icon" width="8" height="16">
+          <use href="/project-WebCrafters/assets/icons-03889596.svg#arrow-up"></use>
+        </svg>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -356,18 +368,18 @@
   <div class="footer-container">
     <div class="footer-wrapper">
       <div class="footer-logo-block">
-        <img
-          class="footer-logo-image"
-          src="../img/logo/logo.png"
-          alt="Logo"
-          width="16"
-          height="18"
-        />
         <a
           class="footer-logo"
           href="../index.html"
           aria-label="yaht Adventures logo"
         >
+          <img
+            class="logo-image"
+            src="../img/logo/logo.png"
+            alt="Logo"
+            width="16"
+            height="18"
+          />
           yaht Adventures
         </a>
       </div>
