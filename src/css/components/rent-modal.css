@@ -8,11 +8,11 @@
   transition: opacity var(--anim-fast), visibility var(--anim-fast);
 }
 
-/* .is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-} */
+}
 
 .modal-container {
   width: 100%;
