@@ -139,7 +139,7 @@
 }
 .footer-social-link:hover .footer-social-icon,
 .footer-social-link:focus .footer-social-icon {
-  /* fill: var(--linear-green); */
+  fill: var(--color-linear-green);
 }
 
 /* FOOTER COPYRIGHT */
