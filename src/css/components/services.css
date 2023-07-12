@@ -8,14 +8,37 @@
   width: 335px;
   height: 335px;
   border-radius: 40px;
+  position: relative;
+}
+
+.service-card:nth-child(1) {
   background: linear-gradient(
       0deg,
       rgba(17, 19, 31, 0.2) 0%,
       rgba(17, 19, 31, 0.2) 100%
     ),
-    url(/img/services/img1),
+    url(./img/services/img1),
     lightgray -15.688px -136.978px / 138.209% 164.622% no-repeat;
-  position: relative;
+}
+
+.service-card:nth-child(2) {
+  background: linear-gradient(
+      0deg,
+      rgba(17, 19, 31, 0.2) 0%,
+      rgba(17, 19, 31, 0.2) 100%
+    ),
+    url(./img/services/img2),
+    lightgray -15.688px -136.978px / 138.209% 164.622% no-repeat;
+}
+
+.service-card:nth-child(3) {
+  background: linear-gradient(
+      0deg,
+      rgba(17, 19, 31, 0.2) 0%,
+      rgba(17, 19, 31, 0.2) 100%
+    ),
+    url(./img/services/img3),
+    lightgray -15.688px -136.978px / 138.209% 164.622% no-repeat;
 }
 
 .service-name {
