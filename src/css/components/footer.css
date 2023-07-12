@@ -138,9 +138,9 @@
 .footer-social-icon {
   fill: var(--color-white, #f6f5ef);
 }
-.footer-social-icon:hover,
-.footer-social-icon:focus {
-  /* linear-gradient */
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
+  /* fill: var(--linear-green); */
 }
 
 /* FOOTER COPYRIGHT */
