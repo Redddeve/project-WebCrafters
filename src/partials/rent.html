@@ -1,1 +1,87 @@
-<section class=""></section>
+<section class="rent-section">
+  <div class="container">
+    <div class="rent-side">
+      <div class="rent-left-container">
+        <h2 class="rent-title">Rent a yaht now</h2>
+        <picture>
+          <!-- <source
+          srcset="
+            /src/img/rent/rent-input@1x-desc.webp 1x,
+            /src/img/rent/rent-input@2x-desc.webp 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            /src/img/rent/rent-input@1x-tab.webp 1x,
+            /src/img/rent/rent-input@2x-tab.webp 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            /src/img/rent/rent-input@1x-mob.webp 1x,
+            /src/img/rent/rent-input@2x-mob.webp 2x
+          "
+          media="(max-width: 767px)"
+        /> -->
+          <img src="../img/rent/rent-input@1x-desc.webp" alt="yaht picture" />
+        </picture>
+      </div>
+      <div class="rent-right-container">
+        <form class="rent-form">
+          <div class="form-container">
+            <label for="user-name" class="rent-form-desc">
+              <span class="rent-input-tag">Full name</span>
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="rent-form-input"
+                required
+                minlength="2"
+                pattern="[a-zA-Z]+"
+              />
+            </label>
+            <label for="user-email" class="rent-form-desc">
+              <span class="rent-input-tag">Email</span>
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="rent-form-input"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              />
+            </label>
+            <label for="user-phone" class="rent-form-desc">
+              <span class="rent-input-tag">Phone number</span>
+              <input
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                class="rent-form-input"
+                required
+                pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+              />
+            </label>
+            <label for="user-comment" class="rent-form-desc">
+              <span class="rent-input-tag">Comment</span>
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                class="rent-form-input"
+              ></textarea>
+            </label>
+            <button type="submit" class="rent-button">
+              Send
+              <svg class="rent-button-icon" width="16" height="16">
+                <use href="../img/icons.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
