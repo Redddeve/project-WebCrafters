@@ -30,16 +30,16 @@ body {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 @media only screen and (min-width: 768px) {
   .section {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 }
 @media only screen and (min-width: 1280px) {
   .section {
-    padding: 164px 0;
+    padding: 82px 0;
   }
 }
 
@@ -68,9 +68,44 @@ body {
   font-size: 36px;
   font-weight: 500;
   line-height: 1.1;
-  letter-spacing: -0.4em;
+  letter-spacing: -0.045em;
 }
-
+@media only screen and (min-width: 768px) {
+  .page-title {
+    font-size: 70px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .page-title {
+    font-size: 100px;
+  }
+}
+.secondary-title-italic {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.045em;
+}
+@media only screen and (min-width: 768px) {
+  .secondary-title-italic {
+    font-size: 32px;
+  }
+}
+.page-desc {
+  color: var(--color-white);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+@media only screen and (min-width: 768px) {
+  .page-desc {
+    font-size: 16px;
+  }
+}
 .link {
   color: var(--color-white);
   font-family: inherit;
