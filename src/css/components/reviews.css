@@ -44,12 +44,14 @@
   }
 }
 .rewievs-list {
-  display: flex;
-  gap: 16px;
+  /* display: flex;
+  gap: 16px; */
 }
 .reviews-thumb {
   margin-bottom: 14px;
   padding: 24px 0;
+
+  max-height: 200px;
 
   display: flex;
   flex-direction: column;
@@ -59,7 +61,7 @@
   border-radius: 24px;
   background-color: var(--color-blue-2);
 }
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   .reviews-thumb + .reviews-thumb {
     display: none;
   }
@@ -68,11 +70,16 @@
   .reviews-thumb:nth-child(3n) {
     display: none;
   }
-}
+} */
 @media only screen and (min-width: 768px) {
   .reviews-thumb {
     margin-bottom: 32px;
-    width: 100%;
+    max-width: 307px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .reviews-thumb {
+    max-width: 320px;
   }
 }
 .reviews-img {
@@ -125,17 +132,25 @@
 }
 .swiper-item {
 }
-.reviews-icon {
-  fill: currentColor;
-  filter: drop-shadow(2px 1px 3px rgba(24, 55, 91, 0.2));
-  border-radius: 50%;
+.reviews-img {
+  margin-left: auto;
+  margin-right: auto;
 }
-.reviews-icon:hover,
-.reviews-icon:focus {
-  fill: #88b3b9;
-  stroke-width: 1px;
-  stroke: #93abae;
+.swiper .swiper-pagination {
+  bottom: -14px;
+  position: static;
+}
+.swiper .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+
+  background-color: #1f212d;
+  filter: drop-shadow(2px 1px 3px rgba(24, 55, 91, 0.2));
+}
+.swiper .swiper-pagination-bullet-active {
+  background-color: #88b3b9;
   box-shadow: 2px 2px 3px 0px rgba(79, 98, 120, 0.9) inset,
     3px 3px 5px 0px rgba(213, 230, 245, 0.4) inset,
     0px 0px 4px 0px rgba(46, 68, 87, 0) inset;
+  border: 0 solid #93abae;
 }

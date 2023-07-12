@@ -27,3 +27,25 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+
+import Swiper from 'swiper/bundle';
+
+// import styles bundle
+import 'swiper/css/bundle';
+
+// init Swiper:
+const swiper = new Swiper('.swiper',
+  {
+  // Optional parameters
+  direction: 'horizontal',
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    watchOverFlow: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    }
+   });
