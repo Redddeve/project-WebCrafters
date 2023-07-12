@@ -37,9 +37,33 @@
   }
 }
 
+.footer-logo-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo-block {
+    align-items: flex-start;
+  }
+}
+
+.footer-logo-image {
+  width: 16px;
+  height: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo-image {
+    width: 20px;
+    height: 23px;
+  }
+}
+
 .footer-logo {
   display: block;
-  margin-left: 8px;
 
   color: var(--color-white, #f6f5ef);
   font-size: 14px;
