@@ -1,0 +1,315 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.hero-container {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    padding-top: 64px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    column-gap: 236px;
+
+    padding-bottom: 164px;
+  }
+}
+
+.main-title {
+  max-width: 332px;
+  margin-bottom: 14px;
+
+  color: #f6f5ef;
+
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -1.62px;
+}
+
+.linear-green {
+  color: var(--color-light-green);
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    max-width: 698px;
+    margin-bottom: 16px;
+
+    color: #f6f5ef;
+
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -2.7px;
+  }
+}
+
+.main-text {
+  max-width: 332px;
+  margin-bottom: 24px;
+
+  color: var(--white, #f6f5ef);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.28px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-text {
+    max-width: 539px;
+    margin-bottom: 32px;
+
+    color: var(--white, #f6f5ef);
+
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+}
+
+/* button */
+.hero-button-box {
+  display: flex;
+  column-gap: 8px;
+  margin-bottom: 64px;
+}
+
+.start-button,
+.explore-button {
+  display: flex;
+  max-width: 130px;
+  padding: 14px 28px;
+  align-items: flex-start;
+  border: 1px transparent;
+  border-radius: 60px;
+
+  color: var(--white, #f6f5ef);
+  background-color: var(--light-green, #93abae);
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.63px;
+
+  transition: color var(--anim-fast), background-color var(--anim-fast);
+}
+
+.explore-button {
+  max-width: 108px;
+  border: 1px solid white;
+  color: var(--white, #f6f5ef);
+  background: transparent;
+
+  transition: border var(--anim-fast);
+}
+
+.start-button:hover,
+.start-button:focus {
+  background: #88b3b9;
+}
+.explore-button:hover,
+.explore-button:focus {
+  color: var(--light-green, #93abae);
+  border-color: var(--light-green, #93abae);
+}
+
+/* main-hero */
+
+.hero-img-box {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-img-box {
+    max-width: 426px;
+  }
+
+  .hero-img {
+    min-width: 426px;
+    height: 598px;
+  }
+}
+
+.hero-clients-block {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-clients-block {
+    top: 32px;
+    left: 32px;
+  }
+}
+
+.hero-clients-img {
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.clients-img {
+  border-radius: 48px;
+  border: 2px solid #93abae;
+}
+
+.first-client {
+  position: relative;
+  z-index: 5;
+}
+
+.second-client {
+  position: relative;
+  z-index: 4;
+  right: 7px;
+}
+
+.third-client {
+  position: relative;
+  z-index: 3;
+  right: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-img {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+.hero-client-title {
+  color: var(--color-dark-blue);
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+}
+
+.hero-img-ceo {
+  position: absolute;
+  top: 35px;
+  right: -12px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-img-ceo {
+    width: 223px;
+    height: 223px;
+    top: 32px;
+    right: -136px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-img-ceo {
+    right: -112px;
+  }
+}
+
+.yacht-img {
+  margin-bottom: 14px;
+  max-width: none;
+}
+
+@media screen and (min-width: 768px) {
+  .yacht-img {
+    width: 378px;
+    height: 221px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .yacht-img {
+    width: 378px;
+    height: auto;
+  }
+}
+
+.hero-img-yacht {
+  position: absolute;
+  top: 152px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-img-yacht {
+    top: 225px;
+  }
+}
+
+.hero-img-text {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 5px;
+  padding-right: 5px;
+  column-gap: 14px;
+}
+
+@media screen and (min-width: 375px) {
+  .hero-img-text > .first-part {
+    color: var(--color-dark-blue);
+
+    font-size: 48px;
+    line-height: 1.1;
+    letter-spacing: -2.16px;
+  }
+}
+
+.hero-img-text > .second-part {
+  color: var(--color-dark-blue);
+
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: -0.63px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-img-text > .second-part {
+    width: 208px;
+    height: 36px;
+
+    color: var(--color-dark-blue);
+
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.81px;
+  }
+}
+
+/* for 320px */
+@media screen and (max-width: 374px) {
+  .first-part {
+    padding-left: 35px;
+
+    color: var(--color-dark-blue);
+
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.045em;
+  }
+
+  .yacht-img {
+    margin-bottom: -15px;
+  }
+}
