@@ -16,7 +16,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .hero-container {
     display: flex;
     flex-direction: row-reverse;
@@ -217,7 +217,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .hero-img-ceo {
     right: -112px;
   }
@@ -235,7 +235,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .yacht-img {
     width: 378px;
     height: auto;
