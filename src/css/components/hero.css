@@ -306,6 +306,10 @@
 
 /* for 320px */
 @media screen and (max-width: 374px) {
+  .hero-img-text {
+    align-items: flex-start;
+    column-gap: 24px;
+  }
   .first-part {
     padding-left: 35px;
 
@@ -315,6 +319,10 @@
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: -0.045em;
+  }
+
+  .second-part {
+    font-size: 12px;
   }
 
   .yacht-img {
