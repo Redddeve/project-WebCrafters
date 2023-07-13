@@ -57,8 +57,7 @@
 .reviews-thumb {
   margin-bottom: 14px;
   min-height: 208px;
-
-  padding: 24px 17px;
+  padding: 24px 14px;
 
   border-radius: 24px;
   background-color: var(--color-blue-2);
@@ -77,7 +76,22 @@
     padding: 32px;
     margin-bottom: 0;
   }
+  .reviews-thumb {
+    padding: 24px 12px;
+  }
 }
+@media only screen and (min-width: 1280px) {
+  .rewievs-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .reviews-thumb {
+    margin-bottom: 64px;
+    padding: 32px 32px;
+  }
+}
+
 .reviews-img {
   margin-bottom: 18px;
   border-radius: 50%;
@@ -88,6 +102,13 @@
     height: 48px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .reviews-img {
+    margin-bottom: 24px;
+  }
+}
+
 .clients-name {
   text-align: center;
   font-family: DM Sans;
@@ -102,7 +123,10 @@
   margin-bottom: 8px;
 }
 .reviews-clients-story {
+  max-width: 300px;
+
   color: rgba(246, 245, 239, 0.5);
+
   text-align: center;
   font-size: 12px;
   font-weight: 400;
@@ -111,7 +135,9 @@
 }
 @media only screen and (min-width: 768px) {
   .reviews-clients-story {
+    max-width: 320px;
     font-size: 16px;
+    letter-spacing: -0.32px;
   }
 }
 
@@ -151,13 +177,22 @@
 .back-to-home {
   width: 44px;
   height: 44px;
+
   background-color: var(--color-light-green);
+
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: background-color var(--anim-fast);
 }
+
 @media only screen and (min-width: 768px) {
+  .bth-box {
+    padding-top: 0;
+  }
+
   .back-to-home {
     width: 68px;
     height: 68px;
@@ -168,4 +203,9 @@
 }
 .bth-icon {
   flex-basis: 100%;
+}
+
+.back-to-home:hover,
+.back-to-home:focus {
+  background-color: #88b3b9;
 }
