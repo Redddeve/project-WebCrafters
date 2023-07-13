@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .footer-wrapper {
     gap: 0;
   }
@@ -48,7 +48,7 @@
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .footer-logo {
     margin-right: 337px;
     margin-bottom: 0;
@@ -76,7 +76,7 @@
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .footer-nav-list {
     flex-direction: row;
     align-items: start;
@@ -97,7 +97,7 @@
 .footer-social-links {
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .footer-social-links {
     margin-left: auto;
   }
