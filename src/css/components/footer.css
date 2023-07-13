@@ -160,18 +160,26 @@
 /* FOOTER COPYRIGHT */
 .footer-copyright {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   gap: 14px;
-  margin: 0 auto;
 }
 .footer-copyright-item {
-  color: rgba(246, 245, 239, 0.5);
+  color: rgba(92, 92, 92, 0.5);
+
   text-align: center;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.18;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.36px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-copyright {
+    gap: 32px;
+  }
+  .footer-copyright-item {
+    letter-spacing: 0.42px;
+  }
 }
 
 @media screen and (min-width: 768px) {
