@@ -257,12 +257,14 @@
 
 .hero-img-text {
   display: flex;
-
   align-items: center;
-  justify-content: space-around;
-  padding-left: 5px;
-  padding-right: 5px;
   column-gap: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-img-text {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 375px) {
@@ -272,6 +274,14 @@
     font-size: 48px;
     line-height: 1.1;
     letter-spacing: -2.16px;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-img-text > .first-part {
+    font-size: 60px;
+    letter-spacing: -2.7px;
   }
 }
 
@@ -287,8 +297,6 @@
   .hero-img-text > .second-part {
     width: 208px;
     height: 36px;
-
-    color: var(--color-dark-blue);
 
     font-size: 18px;
     line-height: 1.1;
