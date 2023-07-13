@@ -13,150 +13,130 @@
       </p>
     </div>
 
-    <ul class="rewievs-list list">
-      <li class="reviews-thumb">
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ./img/reviews/john@1x-desc.webp 1x,
-              ./img/reviews/john@2x-desc.webp 2x,
-              ./img/reviews/john@3x-desc.webp 3x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./img/reviews/john@1x-tab.webp 1x,
-              ./img/reviews/john@2x-tab.webp 2x,
-              ./img/reviews/john@3x-tab.webp 3x
-            "
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./img/reviews/john@1x-mob.webp 1x,
-              ./img/reviews/john@2x-mob.webp 2x,
-              ./img/reviews/john@3x-mob.webp 3x
-            "
-          />
-          <img
-            class="reviews-img img"
-            src="./img/reviews/john@1x-desc.webp"
-            alt="smiling man"
-            width="56"
-            height="56"
-          />
-        </picture>
-        <h3 class="clients-name">John Wax</h3>
-        <p class="reviews-clients-story">
-          I rented the Lagoon 620 with my family for a week-long vacation and it
-          was the best decision ever. The yacht was spacious, comfortable, and
-          luxurious, and the crew took care of everything.
-        </p>
-      </li>
-      <li class="reviews-thumb">
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ./img/reviews/victoria@1x-desc.webp 1x,
-              ./img/reviews/victoria@2x-desc.webp 2x,
-              ./img/reviews/victoria@3x-desc.webp 3x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./img/reviews/victoria@1x-tab.webp 1x,
-              ./img/reviews/victoria@2x-tab.webp 2x,
-              ./img/reviews/victoria@3x-tab.webp 3x
-            "
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./img/reviews/victoria@1x-mob.webp 1x,
-              ./img/reviews/victoria@2x-mob.webp 2x,
-              ./img/reviews/victoria@3x-mob.webp 3x
-            "
-          />
-          <img
-            class="reviews-img img"
-            src="./img/reviews/victoria@1x-desc.webp"
-            alt="smiling man"
-            width="56"
-            height="56"
-          />
-        </picture>
-        <h3 class="clients-name">Victoria Romashenko</h3>
-        <p class="reviews-clients-story">
-          The Sunseeker Manhattan 66 was the perfect choice for our romantic
-          getaway. The yacht was beautifully designed, with all the amenities we
-          needed, and the crew was attentive and friendly.
-        </p>
-      </li>
-      <li class="reviews-thumb">
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ./img/reviews/ihor@1x-desc.webp 1x,
-              ./img/reviews/ihor@2x-desc.webp 2x,
-              ./img/reviews/ihor@3x-desc.webp 3x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./img/reviews/ihor@1x-desc.webp 1x,
-              ./img/reviews/ihor@2x-tab.webp  2x,
-              ./img/reviews/ihor@3x-tab.webp  3x
-            "
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./img/reviews/ihor@1x-mob.webp 1x,
-              ./img/reviews/ihor@2x-mob.webp 2x,
-              ./img/reviews/ihor@3x-mob.webp 3x
-            "
-          />
-          <img
-            class="reviews-img img"
-            src="./img/reviews/ihor@1x-desc.webp"
-            alt="smiling man"
-            width="56"
-            height="56"
-          />
-        </picture>
-        <h3 class="clients-name">Ihor Trachuk</h3>
-        <p class="reviews-clients-story">
-          The Azimut 80 was the most luxurious yacht I've ever been on. The
-          cabins were spacious and elegant, and the outdoor areas were perfect
-          for relaxing and entertaining. Worth every penny!
-        </p>
-      </li>
-    </ul>
-    <ul class="swiper-list list">
-      <li class="swiper-item">
-        <svg class="reviews-icon" width="13" height="13">
-          <use href="./img/icons.svg#swiper"></use>
-        </svg>
-      </li>
-      <li class="swiper-item">
-        <svg class="reviews-icon" width="13" height="13">
-          <use href="./img/icons.svg#swiper"></use>
-        </svg>
-      </li>
-      <li class="swiper-item">
-        <svg class="reviews-icon" width="13" height="13">
-          <use href="./img/icons.svg#swiper"></use>
-        </svg>
-      </li>
-    </ul>
+    <div class="swiper">
+      <div class="swiper-wrapper rewievs-list list">
+        <div class="reviews-thumb swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/reviews/john@1x-desc.webp 1x,
+                ./img/reviews/john@2x-desc.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/reviews/john@1x-tab.webp 1x,
+                ./img/reviews/john@2x-tab.webp 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/reviews/john@1x-mob.webp 1x,
+                ./img/reviews/john@2x-mob.webp 2x
+              "
+            />
+            <img
+              class="reviews-img img"
+              src="./img/reviews/john@1x-desc.webp"
+              alt="smiling man"
+              width="56"
+              height="56"
+            />
+          </picture>
+          <h3 class="clients-name">John Wax</h3>
+          <p class="reviews-clients-story">
+            I rented the Lagoon 620 with my family for a week-long vacation and
+            it was the best decision ever. The yacht was spacious, comfortable,
+            and luxurious, and the crew took care of everything.
+          </p>
+        </div>
+        <div class="reviews-thumb swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/reviews/victoria@1x-desc.webp 1x,
+                ./img/reviews/victoria@2x-desc.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/reviews/victoria@1x-tab.webp 1x,
+                ./img/reviews/victoria@2x-tab.webp 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/reviews/victoria@1x-mob.webp 1x,
+                ./img/reviews/victoria@2x-mob.webp 2x
+              "
+            />
+            <img
+              class="reviews-img img"
+              src="./img/reviews/victoria@1x-desc.webp"
+              alt="smiling man"
+              width="56"
+              height="56"
+            />
+          </picture>
+          <h3 class="clients-name">Victoria Romashenko</h3>
+          <p class="reviews-clients-story">
+            The Sunseeker Manhattan 66 was the perfect choice for our romantic
+            getaway. The yacht was beautifully designed, with all the amenities
+            we needed, and the crew was attentive and friendly.
+          </p>
+        </div>
+        <div class="reviews-thumb swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/reviews/ihor@1x-desc.webp 1x,
+                ./img/reviews/ihor@2x-desc.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/reviews/ihor@1x-desc.webp 1x,
+                ./img/reviews/ihor@2x-tab.webp  2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/reviews/ihor@1x-mob.webp 1x,
+                ./img/reviews/ihor@2x-mob.webp 2x
+              "
+            />
+            <img
+              class="reviews-img img"
+              src="./img/reviews/ihor@1x-desc.webp"
+              alt="smiling man"
+              width="56"
+              height="56"
+            />
+          </picture>
+          <h3 class="clients-name">Ihor Trachuk</h3>
+          <p class="reviews-clients-story">
+            The Azimut 80 was the most luxurious yacht I've ever been on. The
+            cabins were spacious and elegant, and the outdoor areas were perfect
+            for relaxing and entertaining. Worth every penny!
+          </p>
+        </div>
+      </div>
+      <!-- pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Button back to top -->
     <div class="bth-box">
-      <a class="back-to-home" href="#">
+      <a class="back-to-home" id="back-to-up" href="#" onclick="scrollToTop()">
         <svg class="bth-icon" width="8" height="16">
           <use href="/img/icons.svg#arrow-up"></use>
         </svg>
