@@ -74,6 +74,8 @@
   .service-name {
     bottom: 32px;
     left: 32px;
+
+    letter-spacing: -0.81px;
   }
 
   .service-card:nth-child(1) {
