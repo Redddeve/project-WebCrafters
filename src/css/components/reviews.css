@@ -57,7 +57,7 @@
 .reviews-thumb {
   margin-bottom: 14px;
   min-height: 208px;
-  padding: 24px 14px;
+  padding: 24px 17px;
 
   border-radius: 24px;
   background-color: var(--color-blue-2);
@@ -75,20 +75,6 @@
     max-width: 384px;
     padding: 32px;
     margin-bottom: 0;
-  }
-  .reviews-thumb {
-    padding: 24px 12px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .rewievs-list {
-    display: flex;
-    gap: 32px;
-  }
-
-  .reviews-thumb {
-    margin-bottom: 64px;
-    padding: 32px 32px;
   }
 }
 
@@ -123,8 +109,6 @@
   margin-bottom: 8px;
 }
 .reviews-clients-story {
-  max-width: 300px;
-
   color: rgba(246, 245, 239, 0.5);
 
   text-align: center;
