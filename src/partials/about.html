@@ -1,15 +1,15 @@
 <!-- about-section  -->
-<section class="about-section" id="about">
+<section class="section about-section" id="about">
   <div class="container">
     <div class="about-section-desc-container">
-      <h2 class="about-section-title">
+      <h2 class="about-section-title secondary-title-italic">
         <span class="section-title-span">Yaht Adventures</span> fleet is here to
         take you on the ultimate adventure. Each yacht is hand-picked for its
         comfort, style, and performance.
       </h2>
       <ul class="about-section-list">
         <li class="about-section-list-item">
-          <p class="about-section-text">
+          <p class="about-section-text page-desc">
             From spacious decks to state-of-the-art technology, our yachts are
             designed to provide the perfect blend of luxury and functionality.
             Take a look at our selection below and choose the yacht that matches
@@ -17,7 +17,7 @@
           </p>
         </li>
         <li class="about-section-list-item">
-          <p class="about-section-text">
+          <p class="about-section-text page-desc">
             No matter which yacht you choose, our experienced crew will ensure
             that your journey is smooth and enjoyable. Book now and get ready
             for an unforgettable adventure on the high seas.
@@ -26,33 +26,63 @@
       </ul>
     </div>
     <div class="about-section-img-block">
-      <div class="about-section-img-block-thumb1">
-        <img
-          class="about-section-img-block-img1"
-          src=""
-          width="533px"
-          height="473px"
-          alt="palub of yacht"
-        />
-      </div>
-      <div class="about-section-img-block-thumb2">
-        <img
-          class="about-section-img-block-img2"
-          src=""
-          width="308px"
-          height="289px"
-          alt="palub of yacht"
-        />
-      </div>
-      <div class="about-section-img-block-thumb3">
-        <img
-          class="about-section-img-block-img3"
-          src=""
-          width="260px"
-          height="244px"
-          alt="palub of yacht"
-        />
-      </div>
-    </div>
+      <img
+        srcset="
+          ./img/about/about-yaht@1x-desc.webp  533w,
+          ./img/about/about-yaht@2x-desc.webp 1066w,
+          ./img/about/about-yaht@3x-desc.webp 1599w,
+          ./img/about/about-yaht@1x-tab.webp   704w,
+          ./img/about/about-yaht@2x-tab.webp  1408w,
+          ./img/about/about-yaht@3x-tab.webp  2304w,
+          ./img/about/about-yaht@2x-mob.webp   670w,
+          ./img/about/about-yaht@3x-mob.webp  1005w
+        "
+        src="./img/about/about-yaht@1x-mob.webp 335w"
+        sizes="(min-width: 1280px) 533px, (min-width: 768px) 704px, (min-width: 375px) 335px"
+        class="about-section-img-block-img1"
+        width="335px"
+        height="524px"
+        alt="palub of yacht"
+      />
+  
+   
+    <img
+      srcset="
+        ./img/about/about-yaht-2@1x-desc.webp  308w,
+        ./img/about/about-yaht-2@2x-desc.webp  616w,
+        ./img/about/about-yaht-2@3x-desc.webp  924w,
+        ./img/about/about-yaht-2@1x-tab.webp   308w,
+        ./img/about/about-yaht-2@2x-tab.webp   616w,
+        ./img/about/about-yaht-2@3x-tab.webp   924w,
+        ./img/about/about-yaht-2@2x-mob.webp   750w,
+        ./img/about/about-yaht-2@3x-mob.webp  1005w
+      "
+      src="./img/about/about-yaht-2@1x-mob.webp  335w"
+      sizes="(min-width: 1280px) 308px, (min-width: 768px) 308px, (min-width: 375px) 335px"
+      class="about-section-img-block-img2"
+      width="335px"
+      height="289px"
+      alt="palub of yacht"
+    />
+   
+  
+    <img
+      srcset="
+        ./img/about/about-yaht-3@1x-desc.webp 260w,
+        ./img/about/about-yaht-3@2x-desc.webp 520w,
+        ./img/about/about-yaht-3@3x-desc.webp 780w,
+        ./img/about/about-yaht-3@1x-tab.webp  260w,
+        ./img/about/about-yaht-3@2x-tab.webp  520w,
+        ./img/about/about-yaht-3@3x-tab.webp  780w,
+        ./img/about/about-yaht-3@2x-mob.webp  520w,
+        ./img/about/about-yaht-3@3x-mob.webp  780w
+      "
+      src="./img/about/about-yaht-3@1x-mob.webp 260w"
+      sizes="(min-width: 1280px) 260px, (min-width: 768px) 260px, (min-width: 375px) 260px"
+      class="about-section-img-block-img3"
+      width="260px"
+      height="244px"
+      alt="palub of yacht"
+    />
   </div>
 </section>

@@ -9,7 +9,9 @@
 
   --anim-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -60,7 +62,17 @@ body {
     max-width: 1280px;
   }
 }
-
+.logo-image {
+  width: 16px;
+  height: 18px;
+  display: inline;
+}
+@media screen and (min-width: 768px) {
+  .logo-image {
+    width: 20px;
+    height: 23px;
+  }
+}
 .page-title {
   font-size: 36px;
   font-weight: 500;
@@ -80,11 +92,19 @@ body {
 .secondary-title-italic {
   font-family: DM Sans;
   font-size: 24px;
-  font-style: italic;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.045em;
 }
+
+.section-title-span {
+  font-style: italic;
+  background-image: var(--color-linear-green);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media only screen and (min-width: 768px) {
   .secondary-title-italic {
     font-size: 32px;

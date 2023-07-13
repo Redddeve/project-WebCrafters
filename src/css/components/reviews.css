@@ -1,4 +1,10 @@
-.reviews {
+.reviews.section {
+  padding-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews.section {
+    padding-bottom: 32px;
+  }
 }
 .reviews-title {
   margin-bottom: 24px;
@@ -153,4 +159,32 @@
     3px 3px 5px 0px rgba(213, 230, 245, 0.4) inset,
     0px 0px 4px 0px rgba(46, 68, 87, 0) inset;
   border: 0 solid #93abae;
+}
+/** ========================= Back to home ========================= */
+
+.bth-box {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 16px;
+}
+.back-to-home {
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-light-green);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .back-to-home {
+    width: 68px;
+    height: 68px;
+  }
+  .bth-icon {
+    height: 30px;
+  }
+}
+.bth-icon {
+  flex-basis: 100%;
 }
