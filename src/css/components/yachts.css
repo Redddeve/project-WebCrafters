@@ -1,37 +1,49 @@
-.yachts-text {
-  display: flex;
-  width: 882px;
-  flex-direction: column;
-  font-family: DM Sans;
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%;
-  letter-spacing: -4.5px;
+.yachts-section {
+  padding-top: 0;
+  padding-bottom: 164px;
 }
-.yacht-card-item {
-  gap: 16px;
+.yacht-btn-div {
+  display: flex;
+  width: 335px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 80px;
 }
 
-.yacht-card-list {
+.yachts-text {
+  color: var(--white, #f6f5ef);
+  font-family: DM Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 39.6px */
+  letter-spacing: -1.62px;
+}
+.yachts-btn {
+  display: flex;
+  padding: 14px 28px;
+  align-items: flex-start;
+  gap: 10px;
+
+  border-radius: 60px;
+  border: 1px solid var(--white, #f6f5ef);
+  font-family: DM Sans;
+  font-size: 18px;
+
+  font-weight: 700;
+  line-height: 110%; /* 19.8px */
+  letter-spacing: -0.81px;
+}
+
+.yacht-card-item {
   background: var(--blue-2, #1f212d);
   border-radius: 10%;
   width: 335px;
   height: 469px;
-  margin-top: 178px;
+  flex-shrink: 0;
+  display: inline-block;
   gap: 16px;
-}
-.yacht-bg {
-  margin-left: 18px;
-  margin-right: 18px;
-  margin-bottom: 24px;
-  margin-top: 24px;
-
-  width: 299px;
-  height: 251px;
-  border-radius: 24px;
-  background: url(<path-to-image>),
-    lightgray -6.748px 0px / 115.615% 106.773% no-repeat;
 }
 
 .yachts-name-right {
@@ -59,11 +71,11 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 123px;
-  margin-bottom: 24px;
-  margin-top: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
+  gap: 144px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 .yacht-info-name-list {
   display: flex;
@@ -99,6 +111,7 @@
   font-weight: 400;
   line-height: 118%;
   letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
 .yacht-info-div {
   display: inline-flex;
@@ -113,4 +126,29 @@
   font-weight: 400;
   line-height: 118%;
   letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* max-width: 177px;
+  max-height: 19px; */
+  white-space: nowrap;
+}
+.yacht-foto {
+  justify-content: center;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 18px;
+}
+.yacht-img {
+  width: 299px;
+  height: 251px;
+  flex-shrink: 0;
+}
+/* .card-2 {
+  display: none;
+}
+.card-3 {
+  display: none;
+} */
