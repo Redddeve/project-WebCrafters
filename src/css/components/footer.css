@@ -1,38 +1,57 @@
 /* FOOTER */
 /* FOOTER LOGO */
 
+.footer {
+  padding-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-bottom: 16px;
+  }
+}
+
 .footer-container {
   padding-top: 41px;
-  padding-bottom: 14px;
+  border-top: 1px solid rgba(246, 245, 239, 0.2);
 }
 
 @media screen and (min-width: 768px) {
   .footer-container {
     padding-top: 64px;
-    padding-bottom: 16px;
   }
+}
 
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
   .footer-wrapper {
-    display: flex;
     flex-direction: row;
     gap: 150px;
     margin-bottom: 100px;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .footer-wrapper {
-    gap: 0;
-  }
+.footer-logo-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
 }
 
-.footer-logo-block {
+@media screen and (min-width: 768px) {
+  .footer-logo-block {
+    align-items: flex-start;
+  }
 }
 
 .footer-logo {
   display: block;
-  margin-bottom: 41px;
-  margin-left: 8px;
 
   color: var(--color-white, #f6f5ef);
   font-size: 14px;
@@ -50,12 +69,8 @@
 
 @media screen and (min-width: 1280px) {
   .footer-logo {
-    margin-right: 337px;
     margin-bottom: 0;
   }
-}
-
-.footer-logo-icon {
 }
 
 /* FOOTER NAV */
@@ -65,7 +80,6 @@
   flex-direction: column;
   align-items: baseline;
   gap: 14px;
-  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -91,17 +105,7 @@
   text-transform: uppercase;
 }
 
-.footer-nav-link {
-}
 /* FOOTER SOCIAL LINKS */
-.footer-social-links {
-}
-
-@media screen and (min-width: 1280px) {
-  .footer-social-links {
-    margin-left: auto;
-  }
-}
 
 .footer-subtitle {
   margin-bottom: 16px;
@@ -135,12 +139,21 @@
   border-radius: 6px;
 }
 
+/* HOVER, FOCUS */
+
 .footer-social-icon {
   fill: var(--color-white, #f6f5ef);
+  transition: all 0.3s ease;
+  display: inline-block;
+  -webkit-transition: fill 0.4s ease;
+  -moz-transition: fill 0.4s ease;
+  -o-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
 }
-.footer-social-icon:hover,
-.footer-social-icon:focus {
-  /* linear-gradient */
+
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
+  fill: url(#gradient);
 }
 
 /* FOOTER COPYRIGHT */

@@ -9,7 +9,9 @@
 
   --anim-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -30,16 +32,16 @@ body {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 @media only screen and (min-width: 768px) {
   .section {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 }
 @media only screen and (min-width: 1280px) {
   .section {
-    padding: 164px 0;
+    padding: 82px 0;
   }
 }
 
@@ -48,9 +50,6 @@ body {
   max-width: 375px;
   margin: 0 auto;
   padding: 0 20px;
-
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 @media only screen and (min-width: 768px) {
   .container {
@@ -63,14 +62,67 @@ body {
     max-width: 1280px;
   }
 }
-
+.logo-image {
+  width: 16px;
+  height: 18px;
+  display: inline;
+}
+@media screen and (min-width: 768px) {
+  .logo-image {
+    width: 20px;
+    height: 23px;
+  }
+}
 .page-title {
   font-size: 36px;
   font-weight: 500;
   line-height: 1.1;
-  letter-spacing: -0.4em;
+  letter-spacing: -0.045em;
+}
+@media only screen and (min-width: 768px) {
+  .page-title {
+    font-size: 70px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .page-title {
+    font-size: 100px;
+  }
+}
+.secondary-title-italic {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.045em;
 }
 
+.section-title-span {
+  font-style: italic;
+  background-image: var(--color-linear-green);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .secondary-title-italic {
+    font-size: 32px;
+  }
+}
+.page-desc {
+  color: var(--color-white);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+@media only screen and (min-width: 768px) {
+  .page-desc {
+    font-size: 16px;
+  }
+}
 .link {
   color: var(--color-white);
   font-family: inherit;
