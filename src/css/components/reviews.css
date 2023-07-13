@@ -1,9 +1,14 @@
 .reviews.section {
-  padding-bottom: 20px;
+  padding-bottom: 80px;
 }
 @media only screen and (min-width: 768px) {
   .reviews.section {
-    padding-bottom: 32px;
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .reviews.section {
+    padding-bottom: 164px;
   }
 }
 .reviews-title {
@@ -35,7 +40,7 @@
 }
 @media only screen and (min-width: 1280px) {
   .reviews-title {
-    margin-bottom: 64px;
+    margin-bottom: 0;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -49,43 +54,28 @@
     max-width: 273px;
   }
 }
-.rewievs-list {
-  /* display: flex;
-  gap: 16px; */
-}
 .reviews-thumb {
   margin-bottom: 14px;
-  padding: 24px 0;
+  min-height: 208px;
 
-  max-height: 200px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 24px 17px;
 
   border-radius: 24px;
   background-color: var(--color-blue-2);
 }
-/* @media only screen and (max-width: 767px) {
-  .reviews-thumb + .reviews-thumb {
-    display: none;
-  }
-}
-@media only screen and (max-width: 1279px) {
-  .reviews-thumb:nth-child(3n) {
-    display: none;
-  }
-} */
+
 @media only screen and (min-width: 768px) {
   .reviews-thumb {
     margin-bottom: 32px;
-    max-width: 307px;
+    padding: 24px 12px;
   }
 }
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 1280px) {
   .reviews-thumb {
-    max-width: 320px;
+    max-width: 384px;
+    padding: 32px;
+    margin-bottom: 0;
   }
 }
 .reviews-img {
@@ -112,7 +102,6 @@
   margin-bottom: 8px;
 }
 .reviews-clients-story {
-  text-align: center;
   color: rgba(246, 245, 239, 0.5);
   text-align: center;
   font-size: 12px;
@@ -125,19 +114,7 @@
     font-size: 16px;
   }
 }
-.swiper-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  color: var(--color-blue-2);
-}
-@media only screen and (min-width: 1280px) {
-  .swiper-list {
-    display: none;
-  }
-}
-.swiper-item {
-}
+
 .reviews-img {
   margin-left: auto;
   margin-right: auto;
@@ -164,6 +141,10 @@
 
 .bth-box {
   display: flex;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10;
   justify-content: flex-end;
   padding-top: 16px;
 }
