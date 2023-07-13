@@ -65,7 +65,6 @@
   .footer-logo {
     font-size: 18px;
     line-height: 1.18;
-    letter-spacing: 0.54px;
   }
 }
 
@@ -180,5 +179,11 @@
   }
   .footer-copyright-item {
     letter-spacing: 0.42px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-copyright-item {
+    font-size: 14px;
   }
 }
