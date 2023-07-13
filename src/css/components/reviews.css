@@ -1,4 +1,10 @@
-.reviews {
+.reviews.section {
+  padding-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews.section {
+    padding-bottom: 32px;
+  }
 }
 .reviews-title {
   margin-bottom: 24px;
@@ -49,7 +55,7 @@
 }
 .reviews-thumb {
   margin-bottom: 14px;
-  padding: 24px 0;
+  padding: 24px 14px;
 
   display: flex;
   flex-direction: column;
@@ -74,7 +80,22 @@
     margin-bottom: 32px;
     width: 100%;
   }
+  .reviews-thumb {
+    padding: 24px 12px;
+  }
 }
+@media only screen and (min-width: 1280px) {
+  .rewievs-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .reviews-thumb {
+    margin-bottom: 64px;
+    padding: 32px 32px;
+  }
+}
+
 .reviews-img {
   margin-bottom: 18px;
   border-radius: 50%;
@@ -85,6 +106,13 @@
     height: 48px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .reviews-img {
+    margin-bottom: 24px;
+  }
+}
+
 .clients-name {
   text-align: center;
   font-family: DM Sans;
@@ -99,8 +127,10 @@
   margin-bottom: 8px;
 }
 .reviews-clients-story {
-  text-align: center;
+  max-width: 300px;
+
   color: rgba(246, 245, 239, 0.5);
+
   text-align: center;
   font-size: 12px;
   font-weight: 400;
@@ -109,7 +139,9 @@
 }
 @media only screen and (min-width: 768px) {
   .reviews-clients-story {
+    max-width: 320px;
     font-size: 16px;
+    letter-spacing: -0.32px;
   }
 }
 .swiper-list {
@@ -138,4 +170,46 @@
   box-shadow: 2px 2px 3px 0px rgba(79, 98, 120, 0.9) inset,
     3px 3px 5px 0px rgba(213, 230, 245, 0.4) inset,
     0px 0px 4px 0px rgba(46, 68, 87, 0) inset;
+}
+/** ========================= Back to home ========================= */
+
+.bth-box {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 16px;
+}
+.back-to-home {
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--color-light-green);
+
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color var(--anim-fast);
+}
+
+@media only screen and (min-width: 768px) {
+  .bth-box {
+    padding-top: 0;
+  }
+
+  .back-to-home {
+    width: 68px;
+    height: 68px;
+  }
+  .bth-icon {
+    height: 30px;
+  }
+}
+.bth-icon {
+  flex-basis: 100%;
+}
+
+.back-to-home:hover,
+.back-to-home:focus {
+  background-color: #88b3b9;
 }

@@ -12,33 +12,39 @@
 }
 
 .service-card:nth-child(1) {
-  background: linear-gradient(
+  background-image: linear-gradient(
       0deg,
       rgba(17, 19, 31, 0.2) 0%,
       rgba(17, 19, 31, 0.2) 100%
     ),
-    url(./img/services/img1),
-    lightgray -15.688px -136.978px / 138.209% 164.622% no-repeat;
+    image-set(
+      url(../img/services/diving@1x-mob.webp) 1x,
+      url(../img/services/diving@2x-mob.webp) 2x
+    );
 }
 
 .service-card:nth-child(2) {
-  background: linear-gradient(
+  background-image: linear-gradient(
       0deg,
       rgba(17, 19, 31, 0.2) 0%,
       rgba(17, 19, 31, 0.2) 100%
     ),
-    url(./img/services/img2),
-    lightgray -15.688px -136.978px / 138.209% 164.622% no-repeat;
+    image-set(
+      url(../img/services/fishing@1x-mob.webp) 1x,
+      url(../img/services/fishing@2x-mob.webp) 2x
+    );
 }
 
 .service-card:nth-child(3) {
-  background: linear-gradient(
+  background-image: linear-gradient(
       0deg,
       rgba(17, 19, 31, 0.2) 0%,
       rgba(17, 19, 31, 0.2) 100%
     ),
-    url(./img/services/img3),
-    lightgray -15.688px -136.978px / 138.209% 164.622% no-repeat;
+    image-set(
+      url(../img/services/sunbathing@1x-mob.webp) 1x,
+      url(../img/services/sunbathing@2x-mob.webp) 2x
+    );
 }
 
 .service-name {
@@ -68,23 +74,52 @@
   .service-name {
     bottom: 32px;
     left: 32px;
+
+    letter-spacing: -0.81px;
   }
 
   .service-card:nth-child(1) {
     width: 704px;
     height: 632px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(17, 19, 31, 0.2) 0%,
+        rgba(17, 19, 31, 0.2) 100%
+      ),
+      image-set(
+        url(../img/services/diving@1x-tab.webp) 1x,
+        url(../img/services/diving@2x-tab.webp) 2x
+      );
   }
 
   .service-card:nth-child(2) {
     width: 400px;
     height: 389px;
     margin-left: auto;
+    background-image: linear-gradient(
+        0deg,
+        rgba(17, 19, 31, 0.2) 0%,
+        rgba(17, 19, 31, 0.2) 100%
+      ),
+      image-set(
+        url(../img/services/fishing@1x-tab.webp) 1x,
+        url(../img/services/fishing@2x-tab.webp) 2x
+      );
   }
 
   .service-card:nth-child(3) {
     width: 380px;
     height: 352px;
     margin-left: 32px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(17, 19, 31, 0.2) 0%,
+        rgba(17, 19, 31, 0.2) 100%
+      ),
+      image-set(
+        url(../img/services/sunbathing@1x-tab.webp) 1x,
+        url(../img/services/sunbathing@2x-tab.webp) 2x
+      );
   }
 }
 
@@ -95,6 +130,15 @@
 
   .service-card:nth-child(1) {
     width: 712px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(17, 19, 31, 0.2) 0%,
+        rgba(17, 19, 31, 0.2) 100%
+      ),
+      image-set(
+        url(../img/services/diving@1x-desc.webp) 1x,
+        url(../img/services/diving@2x-desc.webp) 2x
+      );
   }
 
   .service-card:nth-child(2) {
@@ -102,10 +146,28 @@
     height: 428px;
     margin-top: auto;
     margin-left: auto;
+    background-image: linear-gradient(
+        0deg,
+        rgba(17, 19, 31, 0.2) 0%,
+        rgba(17, 19, 31, 0.2) 100%
+      ),
+      image-set(
+        url(../img/services/fishing@1x-desc.webp) 1x,
+        url(../img/services/fishing@2x-desc.webp) 2x
+      );
   }
 
   .service-card:nth-child(3) {
     width: 436px;
     margin-left: 340px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(17, 19, 31, 0.2) 0%,
+        rgba(17, 19, 31, 0.2) 100%
+      ),
+      image-set(
+        url(../img/services/sunbathing@1x-desc.webp) 1x,
+        url(../img/services/sunbathing@2x-desc.webp) 2x
+      );
   }
 }
