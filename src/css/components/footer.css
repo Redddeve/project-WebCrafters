@@ -166,6 +166,11 @@
   }
 }
 
+.footer-social-link:hover,
+.footer-social-link:focus {
+  border-color: var(--color-light-green);
+}
+
 .footer-social-link:hover .footer-social-icon,
 .footer-social-link:focus .footer-social-icon {
   fill: url(#gradient);
