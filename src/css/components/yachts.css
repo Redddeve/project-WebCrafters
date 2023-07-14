@@ -19,13 +19,20 @@
 }
 
 .yachts-text {
-  color: var(--white, #f6f5ef);
-  font-family: DM Sans;
   font-size: 36px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.1;
-  letter-spacing: -1.62px;
+  letter-spacing: -0.045em;
+}
+@media only screen and (min-width: 768px) {
+  .yachts-text {
+    font-size: 70px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yachts-text {
+    font-size: 100px;
+  }
 }
 .yachts-btn {
   display: flex;
