@@ -49,6 +49,9 @@
   .menu-toggle {
     display: none;
   }
+  .menu-container {
+    display: none;
+  }
 }
 .menu-toggle-icon {
   fill: var(--color-white);
