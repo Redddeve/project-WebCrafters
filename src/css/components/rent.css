@@ -111,13 +111,21 @@
 }
 
 .rent-button {
-  width: 132px;
-  height: 48px;
   display: flex;
-  padding: 14px 28px;
   justify-content: center;
   align-items: center;
+  width: 132px;
+  height: 48px;
+  margin-top: auto;
+  padding: 14px 28px;
   gap: 16px;
+  border-radius: 60px;
+  border: 1px solid var(--color-white);
+
+  color: var(--color-white);
+  background-color: transparent;
+  fill: var(--color-white);
+
   font-family: DM Sans;
   font-size: 18px;
   font-style: normal;
@@ -125,12 +133,17 @@
   line-height: 110%;
   letter-spacing: -0.045em;
 
-  color: var(--color-white);
-  background-color: transparent;
-  border-radius: 60px;
-  border: 1px solid var(--color-white);
+  transition: border-color var(--anim-fast), color var(--anim-fast);
+}
 
-  margin-top: auto;
+.rent-button:hover,
+.rent-button:focus {
+  color: var(--light-green, #93abae);
+  border-color: var(--light-green, #93abae);
+}
+
+.rent-button-icon {
+  fill: currentColor;
 }
 
 .rent-form-comment {
