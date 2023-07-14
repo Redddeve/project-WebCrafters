@@ -5,9 +5,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero-container {
+  .hero-section.section {
     padding-top: 64px;
-    padding-bottom: 100px;
   }
 }
 
@@ -17,8 +16,6 @@
     flex-direction: row-reverse;
     align-items: center;
     column-gap: 236px;
-
-    padding-bottom: 164px;
   }
 }
 
@@ -216,20 +213,20 @@
   }
 }
 
-.yacht-img {
+.hero-yacht-img {
   margin-bottom: 14px;
   max-width: none;
 }
 
 @media screen and (min-width: 768px) {
-  .yacht-img {
+  .hero-yacht-img {
     width: 378px;
     height: 221px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .yacht-img {
+  .hero-yacht-img {
     width: 378px;
     height: auto;
   }
@@ -304,6 +301,6 @@
   }
 
   .hero-img {
-    min-height: 420px;
+    min-height: 400px;
   }
 }

@@ -36,8 +36,8 @@
   border-radius: 60px;
   border: 1px solid var(--white, #f6f5ef);
   font-family: DM Sans;
-  font-size: 18px;
-
+  font-size: 14px;
+  font-style: normal;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.81px;
