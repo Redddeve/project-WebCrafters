@@ -37,7 +37,7 @@
   mask-image: var(--color-linear-green);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 374px) {
   .about-section-img-block-img3 {
     margin-left: auto;
   }
