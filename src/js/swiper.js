@@ -4,10 +4,37 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 // init Swiper:
-const swiper = new Swiper('.swiper', {
+const swiperYachts = new Swiper('#swiper-yahts', {
   // Optional parameters
   direction: 'horizontal',
   centeredSlides: false,
+  loop: true,
+  spaceBetween: 16,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1280: {
+      slidesPerView: 3,
+      
+    },
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+const swiperReview = new Swiper('#swiper-reviews', {
+  // Optional parameters
+  direction: 'horizontal',
+  centeredSlides: false,
+  watchOverFlow: true,
+
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -21,15 +48,8 @@ const swiper = new Swiper('.swiper', {
       spaceBetween: 32,
     },
   },
-  loop: true,
-  watchOverFlow: true,
-
-  // If we need pagination
+  
   pagination: {
     el: '.swiper-pagination',
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
   },
 });
