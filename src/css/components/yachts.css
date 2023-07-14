@@ -51,17 +51,21 @@
 
   border-radius: 60px;
   border: 1px solid var(--white, #f6f5ef);
+
   font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.81px;
+
+  transition: border-color var(--anim-fast), color var(--anim-fast);
 }
-/* .yachts-btn:hover,
+.yachts-btn:hover,
 .yachts-btn:focus {
-  border-color: ;
-} */
+  color: var(--light-green, #93abae);
+  border-color: var(--light-green, #93abae);
+}
 
 .yacht-card-item {
   padding: 16px 16px 32px 16px;

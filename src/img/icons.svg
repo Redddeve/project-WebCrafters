@@ -17,8 +17,7 @@
         style="fill:var(--color1, #f6f5ef)" />
     </symbol>
     <symbol id="arrow-right" viewBox="0 0 32 32">
-      <path fill="#f6f5ef" d="M22.222 8.302 32 16l-9.778 7.698v-6.365H0v-2.667h22.222V8.301z"
-        style="fill:var(--color1, #f6f5ef)" />
+      <path d="M22.222 8.302 32 16l-9.778 7.698v-6.365H0v-2.667h22.222V8.301z"/>
     </symbol>
     <symbol id="arrow-up" viewBox="0 0 32 32">
       <path fill="#f6f5ef" d="M8 9.778 16 0l8 9.778h-6.614V32h-2.771V9.778H8.001z"
