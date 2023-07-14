@@ -1,14 +1,13 @@
-window.onscroll = () => {
-  toggleTopButton();
-};
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+(() => {
+  window.addEventListener('scroll', function () {
+    var button = document.getElementById('back-to-up');
+    if (button) {
+      button.style.display =
+        window.scrollY > window.innerHeight ? 'block' : 'none';
+    }
+  });
 
-function toggleTopButton() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById('back-to-up').classList.remove('d-none');
-  } else {
-    document.getElementById('back-to-up').classList.add('d-none');
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-}
+})();

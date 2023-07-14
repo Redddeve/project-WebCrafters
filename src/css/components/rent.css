@@ -25,7 +25,7 @@
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .rent-side {
     display: flex;
     flex-direction: column;
@@ -40,20 +40,10 @@
   font-size: 60px;
   font-weight: 500;
   line-height: 110%;
-  letter-spacing: -2.7px;
+  letter-spacing: -0.045em;
   color: var(--color-white);
 
   margin-bottom: 32px;
-}
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .rent-title {
-    width: 271px;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 110%;
-    letter-spacing: -1.62px;
-  }
 }
 
 .rent-form-input {
@@ -66,14 +56,6 @@
   outline: none;
 }
 
-.rent-form-input:not(:placeholder-shown) + .rent-input-tag {
-  transform: translateY(-100%);
-}
-
-.rent-form-desc {
-  position: relative;
-}
-
 .rent-input-tag {
   position: absolute;
   left: 0;
@@ -84,7 +66,42 @@
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  letter-spacing: -0.72px;
+  letter-spacing: -0.045em;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .rent-title {
+    width: 271px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+
+    margin-bottom: 16px;
+  }
+  .rent-form-input {
+    width: 335px;
+  }
+
+  .form-container {
+    gap: 24px;
+  }
+
+  .rent-input-tag {
+    font-size: 14px;
+  }
+
+  .rent-button {
+    font-size: 14px;
+  }
+}
+
+.rent-form-input:not(:placeholder-shown) + .rent-input-tag {
+  transform: translateY(-100%);
+}
+
+.rent-form-desc {
+  position: relative;
 }
 
 .rent-form-input:focus + .rent-input-tag {
@@ -106,7 +123,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 110%;
-  letter-spacing: -0.81px;
+  letter-spacing: -0.045em;
 
   color: var(--color-white);
   background-color: transparent;

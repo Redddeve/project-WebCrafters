@@ -1,5 +1,4 @@
 .header-container {
-  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,6 +10,9 @@
   }
 }
 .header-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   line-height: 1.14;
 }
 @media only screen and (min-width: 768px) {
@@ -33,6 +35,10 @@
   justify-content: flex-end;
   gap: 24px;
 }
+.header-logo,
+.header .link {
+  padding: 24px 0;
+}
 /** ========================= Mobile Menu ========================= */
 .menu-toggle,
 .menu-button {
@@ -47,6 +53,9 @@
 }
 @media only screen and (min-width: 768px) {
   .menu-toggle {
+    display: none;
+  }
+  .menu-container {
     display: none;
   }
 }
