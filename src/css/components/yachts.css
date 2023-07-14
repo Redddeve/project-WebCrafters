@@ -2,6 +2,13 @@
   padding-top: 0;
   padding-bottom: 164px;
 }
+
+@media only screen and (min-width: 1280px) {
+  .yacht-container {
+    max-width: 1180px;
+  }
+}
+
 .yacht-btn-div {
   display: flex;
   width: 335px;
@@ -17,7 +24,7 @@
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.1; /* 39.6px */
+  line-height: 1.1;
   letter-spacing: -1.62px;
 }
 .yachts-btn {
@@ -32,18 +39,43 @@
   font-size: 18px;
 
   font-weight: 700;
-  line-height: 1.1; /* 19.8px */
+  line-height: 1.1;
   letter-spacing: -0.81px;
 }
 
 .yacht-card-item {
+  padding: 16px 16px 32px 16px;
   background: var(--blue-2, #1f212d);
   border-radius: 10%;
   width: 335px;
-  height: 469px;
+  min-height: 469px;
   flex-shrink: 0;
   display: inline-block;
   gap: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .yacht-card-item {
+    min-height: 508px;
+  }
+}
+
+.yachts-name-card {
+  padding: 0 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .yacht-card-item {
+    min-width: 354px;
+    padding: 16px 16px 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .yacht-card-item {
+    min-width: 354px;
+  }
 }
 
 .yachts-name-right {
@@ -52,7 +84,7 @@
   font-size: 16px;
 
   font-weight: 700;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: -0.72px;
   text-transform: uppercase;
 }
@@ -62,26 +94,23 @@
   font-size: 12px;
 
   font-weight: 400;
-  line-height: 118%;
+  line-height: 1.18;
   letter-spacing: 0.36px;
   text-transform: uppercase;
   opacity: 0.5;
 }
 .name-yacht-div {
   display: inline-flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 144px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
+  width: 100%;
 }
 .yacht-info-name-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 6px;
-  margin-left: 24px;
 }
 .yacht-info-name-item {
   color: var(--white, #f6f5ef);
@@ -89,7 +118,7 @@
   font-size: 14px;
 
   font-weight: 400;
-  line-height: 118%;
+  line-height: 1.18;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   gap: 6px;
@@ -108,7 +137,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 118%;
+  line-height: 1.18;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
@@ -123,50 +152,43 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 118%;
+  line-height: 1.18;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
 .text-overflow {
   overflow: hidden;
   text-overflow: ellipsis;
-  /* max-width: 177px;
-  max-height: 19px; */
   white-space: nowrap;
 }
 .yacht-foto {
-  justify-content: center;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 18px;
+  margin-bottom: 24px;
 }
+
+@media only screen and (min-width: 768px) {
+  .yacht-foto {
+    margin-bottom: 32px;
+  }
+}
+
 .yacht-img {
-  width: 299px;
-  height: 251px;
-  flex-shrink: 0;
+  width: 100%;
 }
-/* .card-2 {
-  display: none;
-}
-.card-3 {
-  display: none;
-} */
 
 /* SWIPER JS */
 
 .swiper-main-container {
-  width: 375px;
   height: 530px;
   margin: 0 auto;
   padding: 0;
   position: relative;
-  outline: 1px solid green;
 }
 
 .swiper-container {
   margin: 0 auto;
   padding: 0;
-  width: 335px;
+  margin-bottom: 24px;
+
   height: 469px;
   position: relative;
 }
@@ -185,37 +207,63 @@
 }
 
 .swiper-navigation {
+  justify-content: center;
   display: flex;
   gap: 14px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 24px;
+  margin-top: 48px;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  background-color: transparent;
-  width: 46px;
-  height: 36px;
-  padding: 14px;
-  border-radius: 60px;
-  border: 1px solid var(--color-white);
-}
-
-.swiper-button-prev {
-  top: 100%;
-  left: 50%;
-  transform: translateY(-50%);
-}
-
-.swiper-button-next {
-  top: 100%;
-  right: 50%;
-  transform: translateY(-50%);
+@media only screen and (min-width: 768px) {
+  .swiper-navigation {
+    gap: 16px;
+    margin-top: 32px;
+  }
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
   content: '';
   display: none;
+}
+
+.swiper-navigation .swiper-button-prev {
+  position: relative;
+  background-color: transparent;
+  display: block;
+
+  width: 46px;
+  height: 36px;
+  padding: 0 14px;
+
+  border-radius: 60px;
+  border: 1px solid var(--color-white);
+}
+
+@media only screen and (min-width: 1280px) {
+  .swiper-navigation .swiper-button-prev {
+    position: absolute;
+    left: -61px;
+  }
+}
+
+.swiper-navigation .swiper-button-next {
+  background-color: transparent;
+  position: static;
+  display: block;
+
+  width: 46px;
+  height: 36px;
+  padding: 0 14px;
+
+  border-radius: 60px;
+  border: 1px solid var(--color-white);
+}
+
+@media only screen and (min-width: 1280px) {
+  .swiper-navigation .swiper-button-next {
+    position: absolute;
+    right: -61px;
+  }
 }
