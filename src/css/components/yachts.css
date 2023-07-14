@@ -179,3 +179,78 @@
   height: 251px;
   flex-shrink: 0;
 }
+feauture/swiper-yahts-section
+/* .card-2 {
+  display: none;
+}
+.card-3 {
+  display: none;
+} */
+
+/* SWIPER JS */
+
+.swiper-main-container {
+  width: 375px;
+  height: 530px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  outline: 1px solid green;
+}
+
+.swiper-container {
+  margin: 0 auto;
+  padding: 0;
+  width: 335px;
+  height: 469px;
+  position: relative;
+}
+
+.swiper {
+  width: auto;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+}
+
+.swiper-navigation {
+  display: flex;
+  gap: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: transparent;
+  width: 46px;
+  height: 36px;
+  padding: 14px;
+  border-radius: 60px;
+  border: 1px solid var(--color-white);
+}
+
+.swiper-button-prev {
+  top: 100%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-next {
+  top: 100%;
+  right: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+  display: none;
+}
