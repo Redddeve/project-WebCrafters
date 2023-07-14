@@ -32,7 +32,6 @@
 @media screen and (min-width: 768px) {
   .footer-wrapper {
     flex-direction: row;
-    gap: 150px;
     margin-bottom: 100px;
   }
 }
@@ -65,7 +64,6 @@
   .footer-logo {
     font-size: 18px;
     line-height: 1.18;
-    letter-spacing: 0.03em;
   }
 }
 
