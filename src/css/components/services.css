@@ -18,8 +18,8 @@
       rgba(17, 19, 31, 0.2) 100%
     ),
     image-set(
-      url(./img/services/diving@1x-mob.webp) 1x,
-      url(./img/services/diving@2x-mob.webp) 2x
+      url(/img/services/diving@1x-mob.webp) 1x,
+      url(/img/services/diving@2x-mob.webp) 2x
     );
 }
 
@@ -30,8 +30,8 @@
       rgba(17, 19, 31, 0.2) 100%
     ),
     image-set(
-      url(./img/services/fishing@1x-mob.webp) 1x,
-      url(./img/services/fishing@2x-mob.webp) 2x
+      url(/img/services/fishing@1x-mob.webp) 1x,
+      url(/img/services/fishing@2x-mob.webp) 2x
     );
 }
 
@@ -42,8 +42,8 @@
       rgba(17, 19, 31, 0.2) 100%
     ),
     image-set(
-      url(./img/services/sunbathing@1x-mob.webp) 1x,
-      url(./img/services/sunbathing@2x-mob.webp) 2x
+      url(/img/services/sunbathing@1x-mob.webp) 1x,
+      url(/img/services/sunbathing@2x-mob.webp) 2x
     );
 }
 
@@ -87,8 +87,8 @@
         rgba(17, 19, 31, 0.2) 100%
       ),
       image-set(
-        url(./img/services/diving@1x-tab.webp) 1x,
-        url(./img/services/diving@2x-tab.webp) 2x
+        url(/img/services/diving@1x-tab.webp) 1x,
+        url(/img/services/diving@2x-tab.webp) 2x
       );
   }
 
@@ -102,8 +102,8 @@
         rgba(17, 19, 31, 0.2) 100%
       ),
       image-set(
-        url(./img/services/fishing@1x-tab.webp) 1x,
-        url(./img/services/fishing@2x-tab.webp) 2x
+        url(/img/services/fishing@1x-tab.webp) 1x,
+        url(/img/services/fishing@2x-tab.webp) 2x
       );
   }
 
@@ -117,8 +117,8 @@
         rgba(17, 19, 31, 0.2) 100%
       ),
       image-set(
-        url(./img/services/sunbathing@1x-tab.webp) 1x,
-        url(./img/services/sunbathing@2x-tab.webp) 2x
+        url(/img/services/sunbathing@1x-tab.webp) 1x,
+        url(/img/services/sunbathing@2x-tab.webp) 2x
       );
   }
 }
@@ -136,8 +136,8 @@
         rgba(17, 19, 31, 0.2) 100%
       ),
       image-set(
-        url(./img/services/diving@1x-desc.webp) 1x,
-        url(./img/services/diving@2x-desc.webp) 2x
+        url(/img/services/diving@1x-desc.webp) 1x,
+        url(/img/services/diving@2x-desc.webp) 2x
       );
   }
 
@@ -152,8 +152,8 @@
         rgba(17, 19, 31, 0.2) 100%
       ),
       image-set(
-        url(./img/services/fishing@1x-desc.webp) 1x,
-        url(./img/services/fishing@2x-desc.webp) 2x
+        url(/img/services/fishing@1x-desc.webp) 1x,
+        url(/img/services/fishing@2x-desc.webp) 2x
       );
   }
 
@@ -166,8 +166,8 @@
         rgba(17, 19, 31, 0.2) 100%
       ),
       image-set(
-        url(./img/services/sunbathing@1x-desc.webp) 1x,
-        url(./img/services/sunbathing@2x-desc.webp) 2x
+        url(/img/services/sunbathing@1x-desc.webp) 1x,
+        url(/img/services/sunbathing@2x-desc.webp) 2x
       );
   }
 }
