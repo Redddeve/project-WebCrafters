@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-.hero-container {
-  padding-top: 40px;
-  padding-bottom: 80px;
-}
-
 @media screen and (min-width: 768px) {
   .hero-container {
     padding-top: 64px;
