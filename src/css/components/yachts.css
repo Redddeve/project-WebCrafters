@@ -11,13 +11,22 @@
 
 .yacht-btn-div {
   display: flex;
-  width: 335px;
+  max-width: 335px;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
   margin-bottom: 80px;
 }
-
+@media only screen and (min-width: 768px) {
+  .yacht-btn-div {
+    max-width: 641px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yacht-btn-div {
+    max-width: 882px;
+  }
+}
 .yachts-text {
   font-size: 36px;
   font-weight: 500;
@@ -49,6 +58,10 @@
   line-height: 1.1;
   letter-spacing: -0.81px;
 }
+/* .yachts-btn:hover,
+.yachts-btn:focus {
+  border-color: ;
+} */
 
 .yacht-card-item {
   padding: 16px 16px 32px 16px;

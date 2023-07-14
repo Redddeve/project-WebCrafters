@@ -1,5 +1,17 @@
 /* about-section  */
-
+.about-section {
+  padding-bottom: 122px;
+}
+@media only screen and (min-width: 768px) {
+  .about-section {
+    padding-bottom: 83px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .about-section {
+    padding-bottom: 95px;
+  }
+}
 .about-section-title {
   margin-bottom: 40px;
   margin-right: auto;
