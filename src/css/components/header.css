@@ -33,6 +33,9 @@
   justify-content: flex-end;
   gap: 24px;
 }
+.header .link {
+  padding: 24px 0;
+}
 /** ========================= Mobile Menu ========================= */
 .menu-toggle,
 .menu-button {
