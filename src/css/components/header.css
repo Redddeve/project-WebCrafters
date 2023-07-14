@@ -86,3 +86,20 @@
   align-items: center;
   gap: 14px;
 }
+
+.mobile-menu-circle1 {
+  width: 279px;
+  height: 279px;
+  left: -150px;
+  opacity: 0.6000000238418579;
+  background: #91afba;
+}
+
+.mobile-menu-circle2 {
+  width: 279px;
+  height: 279px;
+  top: 130%;
+  right: 0;
+  opacity: 0.8999999761581421;
+  background: #939cac;
+}
