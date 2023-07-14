@@ -120,3 +120,28 @@
   resize: none;
   height: 62px;
 }
+
+.rent-circle {
+  width: 283px;
+  height: 283px;
+  top: 400px;
+  right: -100px;
+  background: #91afba;
+  opacity: 0.6000000238418579;
+}
+
+@media screen and (min-width: 768px) {
+  .rent-circle {
+    width: 413px;
+    height: 413px;
+    top: 100px;
+    right: -250px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .rent-circle {
+    top: 100px;
+    right: -150px;
+  }
+}
