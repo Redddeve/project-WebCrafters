@@ -73,6 +73,8 @@
 
   transform: translateX(100%);
   transition: transform var(--anim-fast);
+
+  overflow: hidden;
 }
 .menu-container.is-open {
   transform: translateX(0);
