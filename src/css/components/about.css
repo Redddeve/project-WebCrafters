@@ -32,7 +32,6 @@
   position: absolute;
   z-index: -1;
   margin-left: 75px;
-  width: 100%;
 
   -webkit-mask-image: var(--color-linear-green);
   mask-image: var(--color-linear-green);
