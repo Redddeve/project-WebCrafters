@@ -1,3 +1,7 @@
+.yachts-section {
+  padding: 0;
+}
+
 .yachts-text {
   display: flex;
   width: 882px;
@@ -113,4 +117,56 @@
   font-weight: 400;
   line-height: 118%;
   letter-spacing: 0.42px;
+}
+
+.yachts-circle1 {
+  top: 0;
+  left: -20px;
+  width: 255px;
+  height: 255px;
+  opacity: 0.6000000238418579;
+}
+
+.yachts-circle2 {
+  top: 0;
+  right: -20px;
+  width: 195px;
+  height: 195px;
+  opacity: 0.30000001192092896;
+}
+
+@media only screen and (min-width: 768px) {
+  .yachts-circle1 {
+    top: 0;
+    left: -10px;
+    width: 399px;
+    height: 399px;
+    opacity: 0.6000000238418579;
+  }
+
+  .yachts-circle2 {
+    top: 0;
+    right: -10px;
+    width: 195px;
+    height: 195px;
+    opacity: 0.30000001192092896;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .yachts-circle1 {
+    top: 0;
+    left: 124px;
+    width: 414px;
+    height: 414px;
+    opacity: 0.6000000238418579;
+  }
+
+  .yachts-circle2 {
+    top: 0;
+    right: 400px;
+    width: 316px;
+    height: 316px;
+    opacity: 0.30000001192092896;
+  }
 }
