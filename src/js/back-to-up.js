@@ -2,8 +2,8 @@
   window.addEventListener('scroll', function () {
     var button = document.getElementById('back-to-up');
     if (button) {
-      button.style.display =
-        window.scrollY > window.innerHeight ? 'block' : 'none';
+      button.style.visibility =
+        window.scrollY > window.innerHeight ? 'visible' : 'hidden';
     }
   });
 
