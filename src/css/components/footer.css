@@ -105,6 +105,14 @@
   text-transform: uppercase;
 }
 
+.footer-nav-link {
+  transition: color var(--anim-fast);
+}
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: var(--color-light-green);
+}
+
 /* FOOTER SOCIAL LINKS */
 
 .footer-subtitle {
