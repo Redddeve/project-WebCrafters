@@ -47,7 +47,7 @@
 
 @media only screen and (max-width: 374px) {
   .footer-container::before {
-    width: 87%;
+    width: calc(100% - 40px);
   }
 }
 
