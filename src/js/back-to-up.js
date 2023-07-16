@@ -7,6 +7,8 @@
     }
   });
 
+  document.querySelector('#back-to-up').addEventListener('click', scrollToTop);
+
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
