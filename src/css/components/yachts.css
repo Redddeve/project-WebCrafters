@@ -21,11 +21,13 @@
 @media only screen and (min-width: 768px) {
   .yacht-btn-div {
     max-width: 641px;
+    margin: 0 auto 100px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .yacht-btn-div {
     max-width: 882px;
+    margin-bottom: 164px;
   }
 }
 .yachts-text {
@@ -338,9 +340,8 @@
   .yachts-background {
     position: absolute;
     opacity: 0.2;
-    top: -40px;
-    left: 100px;
-    width: 1508.573px;
+    top: 0;
+    width: 100vw;
     height: 1611.22px;
     /* transform: rotate(20deg); */
     background-image: url('/img/background-vectors.png');
