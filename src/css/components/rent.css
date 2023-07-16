@@ -151,17 +151,23 @@
   height: 62px;
 }
 
-.rent-circle {
+.rent-side::after {
+  content: '';
   width: 283px;
   height: 283px;
   top: 400px;
   right: -100px;
   background: #91afba;
   opacity: 0.6000000238418579;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  transform: rotate(-45deg);
+  z-index: -1;
 }
 
 @media screen and (min-width: 768px) {
-  .rent-circle {
+  .rent-side::after {
     width: 413px;
     height: 413px;
     top: 100px;
@@ -170,7 +176,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .rent-circle {
+  .rent-side::after {
     top: 100px;
     right: -150px;
   }

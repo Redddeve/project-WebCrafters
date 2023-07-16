@@ -65,6 +65,21 @@
   height: 100px;
 }
 
+.modal::after {
+  content: '';
+  width: 142px;
+  height: 142px;
+  top: 70px;
+  left: 100px;
+  background: #91afba;
+  opacity: 0.6000000238418579;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
 @media only screen and (min-width: 768px) {
   .modal {
     padding: 97px 64px 64px;
@@ -88,5 +103,11 @@
   .modal-text {
     width: 442px;
     height: 88px;
+  }
+
+  .modal::after {
+    width: 265px;
+    height: 265px;
+    left: 150px;
   }
 }
