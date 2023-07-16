@@ -45,6 +45,12 @@
   }
 }
 
+@media only screen and (max-width: 374px) {
+  .footer-container::before {
+    width: 87%;
+  }
+}
+
 .footer-wrapper {
   display: flex;
   flex-direction: column;

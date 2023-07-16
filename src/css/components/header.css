@@ -34,6 +34,12 @@
   }
 }
 
+@media only screen and (max-width: 374px) {
+  .header-container::after {
+    width: 85%;
+  }
+}
+
 .header-logo {
   display: flex;
   align-items: center;
