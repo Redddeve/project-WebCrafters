@@ -18,11 +18,11 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) {
-      toggleMenu(); // закриття меню
+      toggleMenu();
       return;
     }
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', 'false');
-    disableBodyScroll(document.body); // disableBodyScroll замість enableBodyScroll
+    enableBodyScroll(document.body);
   });
 })();
