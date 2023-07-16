@@ -244,6 +244,12 @@
   }
 }
 
+@media screen and (max-width: 374px) {
+  .hero-img-yacht {
+    transform: translateX(50%) scale(0.9);
+  }
+}
+
 .hero-img-text {
   display: flex;
   align-items: center;
