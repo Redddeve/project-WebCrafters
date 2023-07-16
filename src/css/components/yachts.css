@@ -44,27 +44,21 @@
   }
 }
 .yachts-btn {
-  display: flex;
   padding: 14px 28px;
-  align-items: flex-start;
-  gap: 10px;
-
   border-radius: 60px;
-  border: 1px solid var(--white, #f6f5ef);
+  border: 1px solid var(--color-white);
 
-  font-family: DM Sans;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.81px;
+  letter-spacing: -0.06em;
 
   transition: border-color var(--anim-fast), color var(--anim-fast);
 }
 .yachts-btn:hover,
 .yachts-btn:focus {
-  color: var(--light-green, #93abae);
-  border-color: var(--light-green, #93abae);
+  color: var(--light-green);
+  border-color: var(--light-green);
 }
 
 .yacht-card-item {
@@ -256,6 +250,7 @@
   height: 36px;
   padding: 0 14px;
 
+  fill: var(--color-white);
   border-radius: 60px;
   border: 1px solid var(--color-white);
 }
@@ -276,6 +271,7 @@
   height: 36px;
   padding: 0 14px;
 
+  fill: var(--color-white);
   border-radius: 60px;
   border: 1px solid var(--color-white);
 }
