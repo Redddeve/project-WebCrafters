@@ -36,7 +36,7 @@
 
 @media only screen and (max-width: 374px) {
   .header-container::after {
-    width: 87%;
+    width: calc(100% - 40px);
   }
 }
 
@@ -84,14 +84,13 @@
 /** ========================= Mobile Menu ========================= */
 .menu-toggle,
 .menu-button {
-  width: 40px;
-  height: 40px;
   border: none;
   background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding: 0 0;
 }
 @media only screen and (min-width: 768px) {
   .menu-toggle {
@@ -120,20 +119,6 @@
 }
 .menu-container.is-open {
   transform: translateX(0);
-}
-
-@media screen and (max-width: 374px) {
-  .modal-header-line::after {
-    content: '';
-    display: block;
-
-    position: absolute;
-
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    background-color: rgba(246, 245, 239, 0.2);
-  }
 }
 
 .mob-nav {
