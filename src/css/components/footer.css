@@ -186,12 +186,11 @@
 
 .footer-social-icon {
   fill: var(--color-white, #f6f5ef);
-  transition: all 0.3s ease;
   display: inline-block;
-  -webkit-transition: fill 0.4s ease;
-  -moz-transition: fill 0.4s ease;
-  -o-transition: fill 0.4s ease;
-  transition: fill 0.4s ease;
+  -webkit-transition: fill var(--anim-fast);
+  -moz-transition: fill var(--anim-fast);
+  -o-transition: fill var(--anim-fast);
+  transition: fill var(--anim-fast);
 }
 
 @media screen and (min-width: 768px) {
