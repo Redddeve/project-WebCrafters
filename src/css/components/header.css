@@ -35,10 +35,21 @@
   justify-content: flex-end;
   gap: 24px;
 }
-.header-logo,
-.header .link {
-  padding: 24px 0;
+.header-logo {
+  padding: 28px 0;
 }
+
+.page-nav .link {
+  padding: 31px 0;
+
+  transition: color var(--anim-fast);
+}
+
+.page-nav .link:hover,
+.page-nav .link:focus {
+  color: var(--color-light-green);
+}
+
 /** ========================= Mobile Menu ========================= */
 .menu-toggle,
 .menu-button {
