@@ -1,10 +1,6 @@
 /* FOOTER */
 /* FOOTER LOGO */
 
-.footer {
-  padding-bottom: 14px;
-}
-
 @media screen and (min-width: 768px) {
   .footer {
     padding-bottom: 16px;
@@ -13,6 +9,7 @@
 
 .footer-container {
   padding-top: 41px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -217,7 +214,7 @@
   gap: 14px;
 }
 .footer-copyright-item {
-  color: rgba(92, 92, 92, 0.5);
+  color: rgba(246, 245, 239, 0.5);
 
   text-align: center;
   font-size: 12px;
@@ -238,5 +235,52 @@
 @media screen and (min-width: 768px) {
   .footer-copyright-item {
     font-size: 14px;
+  }
+}
+
+.footer-container::after {
+  content: '';
+  width: 420px;
+  height: 420px;
+  top: 250px;
+  right: -100px;
+  background: #93abae;
+  opacity: 0.6000000238418579;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+.footer-container::before {
+  content: '';
+  width: 317px;
+  height: 317px;
+  top: 300px;
+  right: 200px;
+  background: #93abae;
+  opacity: 0.6000000238418579;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  transform: rotate(-45deg);
+  z-index: -1;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container::after {
+    right: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-container::after {
+    right: 600px;
+  }
+
+  .footer-container::before {
+    display: block;
   }
 }

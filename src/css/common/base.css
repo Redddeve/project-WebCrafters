@@ -29,6 +29,11 @@ body {
   font-family: 'DM Sans', sans-serif;
   color: var(--color-white);
   background-color: var(--color-dark-blue);
+  overflow-x: hidden;
+}
+
+main {
+  overflow: hidden;
 }
 
 .section {

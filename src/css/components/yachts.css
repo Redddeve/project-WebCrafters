@@ -27,6 +27,8 @@
 @media only screen and (min-width: 1280px) {
   .yacht-btn-div {
     max-width: 882px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 164px;
   }
 }
@@ -286,52 +288,67 @@
   }
 }
 
-.yachts-circle1 {
-  top: 0;
-  left: -20px;
+.yacht-container::after {
+  content: '';
+  top: -40px;
+  left: -40px;
   width: 255px;
   height: 255px;
   opacity: 0.6000000238418579;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  background: #91afba;
+  transform: rotate(-45deg);
+  z-index: -1;
 }
 
-.yachts-circle2 {
-  top: 0;
+.yacht-container::before {
+  content: '';
+  top: -40px;
   right: -20px;
   width: 195px;
   height: 195px;
   opacity: 0.30000001192092896;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  background: #939cac;
+  transform: rotate(-45deg);
+  z-index: -1;
 }
 
 @media only screen and (min-width: 768px) {
-  .yachts-circle1 {
-    top: 0;
-    left: -10px;
+  .yacht-container::after {
+    top: -110px;
+    left: 40px;
     width: 399px;
     height: 399px;
     opacity: 0.6000000238418579;
   }
 
-  .yachts-circle2 {
+  .yacht-container::before {
     top: 0;
-    right: -10px;
+    right: 80px;
     width: 195px;
     height: 195px;
-    opacity: 0.30000001192092896;
+    opacity: 0.50000001192092896;
+    background: #a6a9b2;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .yachts-circle1 {
+  .yacht-container::after {
     top: 0;
-    left: 124px;
+    left: 224px;
     width: 414px;
     height: 414px;
     opacity: 0.6000000238418579;
   }
 
-  .yachts-circle2 {
+  .yacht-container::before {
     top: 0;
-    right: 400px;
+    right: 213px;
     width: 316px;
     height: 316px;
     opacity: 0.30000001192092896;
@@ -340,10 +357,11 @@
   .yachts-background {
     position: absolute;
     opacity: 0.2;
+    left: 110px;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 1611.22px;
-    /* transform: rotate(20deg); */
+    transform: rotate(-7deg);
     background-image: url('/img/background-vectors.png');
     background-repeat: no-repeat;
   }

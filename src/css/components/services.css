@@ -66,15 +66,6 @@
   letter-spacing: -0.63px;
 }
 
-.services-circle {
-  width: 323px;
-  height: 323px;
-  top: 350px;
-  left: -50px;
-  background: #91afba;
-  opacity: 0.6000000238418579;
-}
-
 @media only screen and (min-width: 768px) {
   .services-list {
     gap: 32px;
@@ -130,13 +121,6 @@
         url(/img/services/sunbathing@2x-tab.webp) 2x
       );
   }
-
-  .services-circle {
-    width: 414px;
-    height: 414px;
-    top: 550px;
-    left: -150px;
-  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -186,8 +170,34 @@
         url(/img/services/sunbathing@2x-desc.webp) 2x
       );
   }
+}
 
-  .services-circle {
+.services-container::after {
+  content: '';
+  width: 323px;
+  height: 323px;
+  top: 320px;
+  left: -120px;
+  background: #91afba;
+  opacity: 0.8000000238418579;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .services-container::after {
+    width: 414px;
+    height: 414px;
+    top: 550px;
+    left: -230px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .services-container::after {
     top: 230px;
     left: -150px;
   }
