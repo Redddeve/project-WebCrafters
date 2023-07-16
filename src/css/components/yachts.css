@@ -338,8 +338,7 @@
   .yachts-background {
     position: absolute;
     opacity: 0.2;
-    top: -40px;
-    left: 100px;
+    top: 0;
     width: 1508.573px;
     height: 1611.22px;
     /* transform: rotate(20deg); */
