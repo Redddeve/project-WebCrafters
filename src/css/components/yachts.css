@@ -1,6 +1,7 @@
 .yachts-section {
   padding-top: 0;
   padding-bottom: 164px;
+  position: relative;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -332,5 +333,17 @@
     width: 316px;
     height: 316px;
     opacity: 0.30000001192092896;
+  }
+
+  .yachts-background {
+    position: absolute;
+    opacity: 0.2;
+    top: -40px;
+    left: 100px;
+    width: 1508.573px;
+    height: 1611.22px;
+    /* transform: rotate(20deg); */
+    background-image: url('/img/background-vectors.png');
+    background-repeat: no-repeat;
   }
 }
