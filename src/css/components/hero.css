@@ -291,6 +291,10 @@
 
 /* for 320px */
 @media screen and (max-width: 374px) {
+  .hero-img-text {
+    align-items: flex-start;
+  }
+
   .first-part {
     padding-left: 15px;
   }
