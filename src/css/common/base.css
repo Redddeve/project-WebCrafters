@@ -32,6 +32,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  overflow: hidden;
+}
+
 .section {
   padding: 40px 0;
 }

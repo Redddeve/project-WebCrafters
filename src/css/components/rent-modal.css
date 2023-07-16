@@ -6,6 +6,7 @@
   height: 100%;
   background: rgba(46, 47, 66, 0.7);
   transition: opacity var(--anim-fast), visibility var(--anim-fast);
+  z-index: 999;
 }
 
 .is-hidden {
