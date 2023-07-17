@@ -9,16 +9,18 @@
 
 .footer-container {
   padding-top: 41px;
+  padding-bottom: 14px;
   overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
   .footer-container {
     padding-top: 64px;
+    padding-bottom: 16px;
   }
 }
 
-.footer-container::before {
+.footer-line::before {
   content: '';
   display: block;
 
@@ -31,19 +33,19 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .footer-container::before {
+  .footer-line::before {
     width: 704px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .footer-container::before {
+  .footer-line::before {
     width: 1216px;
   }
 }
 
 @media only screen and (max-width: 374px) {
-  .footer-container::before {
+  .footer-line::before {
     width: calc(100% - 40px);
   }
 }
