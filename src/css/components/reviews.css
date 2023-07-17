@@ -166,6 +166,7 @@
   background-color: var(--color-light-green);
 
   border-radius: 8px;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
