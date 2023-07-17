@@ -10,6 +10,7 @@
 .footer-container {
   padding-top: 41px;
   overflow: hidden;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -23,6 +24,8 @@
   display: block;
 
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 
   width: 335px;
   height: 1px;
@@ -238,7 +241,7 @@
   }
 }
 
-.footer-container::after {
+.footer-container .container::after {
   content: '';
   width: 420px;
   height: 420px;
@@ -253,7 +256,7 @@
   z-index: -1;
 }
 
-.footer-container::before {
+.footer-container .container::before {
   content: '';
   width: 317px;
   height: 317px;
@@ -270,17 +273,17 @@
 }
 
 @media screen and (min-width: 768px) {
-  .footer-container::after {
+  .footer-container .container::after {
     right: 100px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .footer-container::after {
+  .footer-container .container::after {
     right: 600px;
   }
 
-  .footer-container::before {
+  .footer-container .container::before {
     display: block;
   }
 }
